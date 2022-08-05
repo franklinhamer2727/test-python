@@ -1,0 +1,28 @@
+name: build-flask-to-gh-pages
+on:
+  push:
+    branches:
+      - "main"
+permissions:
+  contents: write
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.10
+      - name: install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: execute py script
+        run: |
+          python freeze.py && python fix.py
+      - name: Deploy 🚀
+        uses:  JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build #La carpeta que debe implementar la acción.
