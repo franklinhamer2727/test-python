@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+<link type="text/css" rel="stylesheet" href="/test-python/static/css/index.css">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Franklin Hamer</title>
-  <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
 </head>
+
 <body>
-<div class="container">
-  <div class="row">
-     <div class="col-xs-12" id="resHead">
-         <h3>The Resume Of</h3>
-         <h1>Hamer Franklin Jara Ocas(franklinhamer2727)</h1>
-         <img width=100px class="img-responsive"  src="{{url_for('static', filename='logom.png')}}" />
-     </div>
-   </div>
-  <div class="row">
-    <div class="col-xs-12 col-md-6" id="workExp">
-      <h1 class="heading">About me</h1>
-      <p>
-        Your introduction comes here!
-      </p>
-
-      <h1 class="heading">Work Experience</h1>
-        <h2 class="title">Company</h2>
-          <h3 class="subtitle">Position</h3>
-            <h4 class="date">From: MM-YYYY - To: MM-YYYY/h4>
-              <p>
-                Responsibilities
-              </p>
-    
-    </div>
-    <div class="col-xs-12 col-md-6" id="skillEdu">
-      <h1 class="heading">Skillset</h1>
-
-        <h2 class="title">Type</h2>
-        <p>
-          Detailed description!
-        </p>
-      <h1 class="heading">Education</h1>
-        <h2 class="title">Name of school</h2>
-          <h3 class="subtitle">Type of education!</h3>
-        
-    </div>
-    <div class="col-xs-12 col-md-6" id="skillEdu">
-      <h1 class="heading">Languages</h1>
-        <h2 class="title">Language - Level</h2>
-    </div>
-    <div class="col-xs-12 col-md-6" id="skillEdu">
-      <h1 class="heading">Achievements</h1>
-        <h2 class="title">Event - Year - Achievement</h2>
-    </div>
-  </div>
-  <div class="row">
-  <div class="contact col-xs-12">
-    <img width=100px class="img-responsive"  src="{{url_for('static', filename='letter.png')}}" />
-   <h1 class="title">Contact</h1>
-      <p class="subtitle">
-          Country <br/>
-          ZIP, City<br />
-          Street #number<br />
-        <a href="tel:phone">PHONE</a><br />
-        <a target="_blank" href="https://twitter.com/franklin_hamer">Twitter</a><br />
-        <a target="_blank" href="https://github.com/franklinhamer2727">GitHub</a><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12" id="resHead">
+                <h3>The Resume Of</h3>
+                <h1>Hamer Franklin Jara Ocas(franklinhamer2727)</h1>
+                <img width=100px class="img-responsive" src="{{url_for('static', filename='logom.png')}}" />
+                <img width=100px class="img-responsive" src="/test-python/static/logom.png" />
+            </div>
         </div>
-</div>
-</div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6" id="workExp">
+                <h1 class="heading">About me</h1>
+                <p>
+                    Your introduction comes here!
+                </p>
+
+                <h1 class="heading">Work Experience</h1>
+                <h2 class="title">Company</h2>
+                <h3 class="subtitle">Position</h3>
+                <h4 class="date">From: MM-YYYY - To: MM-YYYY/h4>
+                    <p>
+                        Responsibilities
+                    </p>
+
+            </div>
+            <div class="col-xs-12 col-md-6" id="skillEdu">
+                <h1 class="heading">Skillset</h1>
+
+                <h2 class="title">Type</h2>
+                <p>
+                    Detailed description!
+                </p>
+                <h1 class="heading">Education</h1>
+                <h2 class="title">Name of school</h2>
+                <h3 class="subtitle">Type of education!</h3>
+
+            </div>
+            <div class="col-xs-12 col-md-6" id="skillEdu">
+                <h1 class="heading">Languages</h1>
+                <h2 class="title">Language - Level</h2>
+            </div>
+            <div class="col-xs-12 col-md-6" id="skillEdu">
+                <h1 class="heading">Achievements</h1>
+                <h2 class="title">Event - Year - Achievement</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="contact col-xs-12">
+                <img width=100px class="img-responsive" src="{{url_for('static', filename='letter.png')}}" />
+                <img width=100px class="img-responsive" src="/test-python/static/letter.png" />
+
+                <h1 class="title">Contact</h1>
+                <p class="subtitle">
+                    Country <br/> ZIP, City<br /> Street #number<br />
+                    <a href="tel:phone">PHONE</a><br />
+                    <a target="_blank" href="https://twitter.com/franklin_hamer">Twitter</a><br />
+                    <a target="_blank" href="https://github.com/franklinhamer2727">GitHub</a><br />
+            </div>
+        </div>
+    </div>
 
 </body>
 
 </html>
-
